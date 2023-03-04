@@ -1,0 +1,19 @@
+[GLOBAL]
+pants_version = "2.16.0.dev7"
+
+backend_packages = [
+  "pants.backend.build_files.fmt.black",
+  "pants.backend.python",
+  "pants.backend.experimental.python.lint.ruff",
+]
+
+[python]
+# This will become the default in Pants 2.15.
+tailor_pex_binary_targets = false
+interpreter_constraints = ["CPython==3.10.*"]
+
+[source]
+root_patterns = ["src/python"]
+
+[ruff]
+config="ruff.toml"

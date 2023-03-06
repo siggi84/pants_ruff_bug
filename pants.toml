@@ -4,6 +4,7 @@ pants_version = "2.16.0.dev7"
 backend_packages = [
   "pants.backend.build_files.fmt.black",
   "pants.backend.python",
+  "pants.backend.python.lint.flake8",
   "pants.backend.experimental.python.lint.ruff",
 ]
 

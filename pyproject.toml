@@ -1,9 +1,2 @@
 [tool.ruff]
-select = ["E", "F"]
-ignore = []
-
-fixable = ["A", "B", "C", "D", "E", "F"]
-unfixable = []
-
-[tool.ruff.per-file-ignores]
-"src/python/hello_ruff.py" = ["F401"]
+select = ["F401"]
